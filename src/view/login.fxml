@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #303f9f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <children>
+        <AnchorPane id="AnchorPane" layoutY="114.0" prefHeight="346.0" prefWidth="700.0" style="-fx-background-color: #1de9b6;">
+            <children>
+                <TextField fx:id="txtUserName" layoutX="325.0" layoutY="77.0" prefHeight="25.0" prefWidth="333.0" promptText="Username" />
+                <PasswordField fx:id="txtPassword" layoutX="325.0" layoutY="121.0" prefHeight="25.0" prefWidth="333.0" promptText="password" />
+                <Label fx:id="lblLogin" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="21.0" prefHeight="35.0" prefWidth="233.0" text="Login" textAlignment="CENTER" textFill="#d02ce5d1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="loginBtn" layoutX="350.0" layoutY="201.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="106.0" text="Login" />
+            <ImageView fitHeight="278.0" fitWidth="233.0" layoutX="32.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/43029.jpg" />
+               </image>
+            </ImageView>
+              <Button fx:id="signUpBtn" layoutX="511.0" layoutY="201.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00695c;" text="Sign Up" textAlignment="CENTER" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="304.0" layoutY="17.0" prefHeight="27.0" prefWidth="92.0" text="2DO">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

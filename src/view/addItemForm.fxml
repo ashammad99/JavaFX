@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemFormController">
+   <children>
+      <TextField fx:id="txtTask" layoutX="96.0" layoutY="104.0" prefHeight="25.0" prefWidth="408.0" promptText="Task">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtDescription" alignment="TOP_LEFT" layoutX="96.0" layoutY="164.0" prefHeight="86.0" prefWidth="408.0" promptText="Description">
+
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveTaskBtn" blendMode="DIFFERENCE" contentDisplay="BOTTOM" layoutX="228.0" layoutY="265.0" mnemonicParsing="false" onAction="#SaveTask" prefHeight="25.0" prefWidth="116.0" style="-fx-cursor: pointer;" text="Save Task" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="32.0" layoutY="31.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</AnchorPane>

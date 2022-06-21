@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="400.0" prefWidth="700.0" stylesheets="@../style/table%20Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemController">
+    <children>
+        <AnchorPane id="AnchorPane" layoutX="-1.0" prefHeight="125.0" prefWidth="702.0" style="-fx-background-color: cyan;">
+            <children>
+                <Label layoutX="317.0" layoutY="12.0" text="2DO">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+              <ImageView fx:id="addButton" fitHeight="53.0" fitWidth="58.0" layoutX="42.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../assets/icon_add.png" />
+                  </image>
+              </ImageView>
+              <Label fx:id="lblNoTasks" alignment="CENTER" layoutX="220.0" layoutY="80.0" prefHeight="31.0" prefWidth="232.0" text="Not Tasks for Today, yet !" textFill="#b9b0b0">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Label>
+            <ImageView fx:id="refreshButton" fitHeight="53.0" fitWidth="53.0" layoutX="122.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_refresh_64.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="deleteButton" fitHeight="53.0" fitWidth="53.0" layoutX="462.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon_delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="exit" fitHeight="53.0" fitWidth="53.0" layoutX="638.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_shutdown_64.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="sortBtn" fitHeight="53.0" fitWidth="47.0" layoutX="549.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_alphabetical_sorting_64.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+      <TableView fx:id="taskTable" layoutX="10.0" layoutY="144.0" onMouseClicked="#getSelected" prefHeight="235.0" prefWidth="679.0">
+        <columns>
+          <TableColumn fx:id="taskCol" prefWidth="122.0" text="Task" />
+          <TableColumn fx:id="descCol" minWidth="0.0" prefWidth="412.0" text="Description" />
+            <TableColumn fx:id="dateCol" prefWidth="144.0" text="Date" />
+        </columns>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </TableView>
+    </children>
+</AnchorPane>
